@@ -10,18 +10,25 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 exports.config = {
   allScriptsTimeout: 11000,
   specs: [
-    './src/**/*.e2e-spec.ts'
-  ],
+    //'./src/**/*.e2e-spec.ts',
+    //'./src/**/*.all.e2e-spec.ts',
+    //'./src/actions.ts',
+    //'./src/windowhandles.ts',
+    //'./src/alerts.ts',
+    //'./src/frames.ts',
+    './src/framework1.ts',
+    ],
   
 
+  // capabilities: { 
+  //   browserName: 'chrome', 
+  //   chromeOptions: { args: [ "--headless", "--disable-gpu", "--window-size=800,600"] }
+  // },
+
   capabilities: { 
-    browserName: 'chrome', 
-    chromeOptions: { args: [ "--headless", "--disable-gpu", "--window-size=800,600"] }
+    browserName: 'chrome',
+    //browserName: 'firefox',
   },
-
-
-
-
 
 
   directConnect: true,
